@@ -138,6 +138,7 @@ a{
 	color:#7d8287;
 	font-size:16px;
 	border:none;
+	outline:none;
 }
 .search_list{
 	width:570px;

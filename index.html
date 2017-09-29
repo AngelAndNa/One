@@ -22,11 +22,11 @@
 				</div>
 				<div class="nav-center">
 					<ul class="uls">
-						<li class="one"><a href="">OnePlus 5</a></li>
-						<li class="lists market"><a href="">商城</a></li>
-						<li class="lists service"><a href="">服务</a></li>
-						<li class="lists blog"><a href="">博客</a></li>
-						<li class="lists forum"><a href="">论坛</a></li>
+						<li class="one"><a href="http://www.oneplus.cn/product/oneplus5">OnePlus 5</a></li>
+						<li class="lists market"><a href="http://store.oneplus.cn>商城</a></li>
+						<li class="lists service"><a href="http://service.oneplus.cn">服务</a></li>
+						<li class="lists blog"><a href="http://pr.oneplus.cn">博客</a></li>
+						<li class="lists forum"><a href="http://www.oneplusbbs.com">论坛</a></li>
 					</ul>
 				</div>
 				<div class="nav-right">
@@ -38,7 +38,7 @@
 						</div>
 						<div class="search_list">
 							<ul class="search_list_inner">
-								<li><a class="search_pro" href="#">OnePlus 3T</a></li>
+								<li><a class="search_pro" href="http://www.oneplus.cn/product">OnePlus 3T</a></li>
 								<li><a class="search_pro" href="#">一加DASH闪充</a></li>
 								<li><a class="search_pro" href="#">一加3T个性保护壳</a></li>
 								<li><a class="search_pro" href="#">电子发票</a></li>
@@ -70,14 +70,14 @@
 		</div>
 		<div class="session">
 			<p>Shot on OnePlus</p>
-			<a id="btn" href="#"><span class="join">我要参加</span><div id="progress"></div></a>
+			<a id="btn" href="http://photos.oneplus.cn"><span class="join">我要参加</span><div id="progress"></div></a>
 		</div>
 		<div class="box">
 			<ul class="ulItem">
 				<li class="list">
 					<img src="img/a.jpg" />
 					<div class="list-first">
-						<a href="#">
+						<a href="http://pr.oneplus.cn/blog">
 							<h3>博客</h3>
 							<p>OnePlus 携手 COSTA,一次优雅的咖啡之旅。</p>
 						</a>
@@ -86,7 +86,7 @@
 				<li class="list">
 					<img src="img/f.jpg"/>
 					<div class="list-two">
-						<a href="#">
+						<a href="http://pr.oneplus.cn/news">
 							<h3>新闻</h3>
 							<p>OnePlus 5的媒体评测汇总。</p>
 						</a>
@@ -95,7 +95,7 @@
 				<li class="list">
 					<img src="img/c.jpg"/>
 					<div class="list-three">
-						<a href="#">
+						<a href="http://pr.oneplus.cn/views">
 							<h3>视频</h3>
 							<p>OnePlus 5月岩灰，优雅含蓄的性能王者。</p>
 						</a>
@@ -106,16 +106,16 @@
 		<div class="designs">
 			<ul class="items">
 				<li class="lis first">
-					<a href="#"><p class="return-one"></p><span>7天无理由退货</span></a>
+					<a href="http://service.oneplus.cn"><p class="return-one"></p><span>7天无理由退货</span></a>
 				</li>
 				<li class="lis two">
-					<a href="#"><p class="return-two"></p><span>15天退货保障</span></a>
+					<a href="http://service.oneplus.cn"><p class="return-two"></p><span>15天退货保障</span></a>
 				</li>
 				<li class="lis three">
-					<a href="#"><p class="swap"></p><span>30天换货保障</span></a>
+					<a href="http://service.oneplus.cn"><p class="swap"></p><span>30天换货保障</span></a>
 				</li>
 				<li class="lis four">
-					<a href="#"><p class="free-send"></p><span>99元全场包邮</span></a>
+					<a href="http://service.oneplus.cn"><p class="free-send"></p><span>99元全场包邮</span></a>
 				</li>
 			</ul>
 		</div>
@@ -186,6 +186,25 @@
 			$(".search_a").css({backgroundImage:"url(img/icons.png)",backgroundPosition:"0px -30px"});	
 		}
 	);
+	
+	$(".search_input").click(function(){
+		$(".search_input").css({border:"none"});
+		$(".search_input").keydown(function(){
+			if($(".search_input")[0].value==""){
+				$(".search_input").css({border:"none"});
+			}else{
+				$(".search_input").css({placeholder:"none"});
+			}	
+		})
+	});
+	
+	for(let i=0;i<($(".search_pro")[0]).length;i++){
+		$($(".search_pro")[i]).mousemove(function(){
+			$($(".search_pro")[i]).css({backgroundColor:"#666"});
+		})
+	}
+	
+	
 	
 
 
