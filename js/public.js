@@ -1,12 +1,9 @@
 $(function(){
-	$("#close").click(function(){
-		$("#toper").css({display:"none"});
-	});
-	
 	
 	$(".cart_a").mouseenter(function(){
 		$(".no_goods").animate({opacity:"1"},500);
 	});
+	
 	$(".cart_a").mouseleave(function(){
 		$(".no_goods").animate({opacity:"0"},500);
 	});
@@ -22,8 +19,8 @@ $(function(){
 			$($(".moves")[5]).animate({top:$($(".moves")[5]).offset().top-100+"px",opacity:"1"},2500);
 		}
 	},1000);
-	
-		$(".search_a").toggle(
+
+	$(".search_a").toggle(
 		function(){
 			$(".search_a").css({background:"url(img/regular.png) no-repeat",backgroundPosition:"0px -36px"});
 			$(".search_tit").show("fast");
@@ -54,16 +51,4 @@ $(function(){
 		})
 	});
 	
-	
-	$($("#btn")).mouseenter(function(){ 
-			$("#progress").animate({width:"130px"},100);
-			$(".join").css({color:"black",zIndex:"999"});
-			console.log("mouseover");
-			
-	});	
-	$($("#btn")).mouseleave(function(){
-			$("#progress").animate({width:"0px"},100);
-			$(".join").css({color:"white"});
-			
-	});
-});
+});	

@@ -23,7 +23,7 @@
 				<div class="nav-center">
 					<ul class="uls">
 						<li class="one"><a href="http://www.oneplus.cn/product/oneplus5">OnePlus 5</a></li>
-						<li class="lists market"><a href="http://store.oneplus.cn>商城</a></li>
+						<li class="lists market"><a href="http://store.oneplus.cn">商城</a></li>
 						<li class="lists service"><a href="http://service.oneplus.cn">服务</a></li>
 						<li class="lists blog"><a href="http://pr.oneplus.cn">博客</a></li>
 						<li class="lists forum"><a href="http://www.oneplusbbs.com">论坛</a></li>
@@ -166,38 +166,7 @@
 <script type="text/javascript" src="js/jquery-1.8.3.min.js"></script>
 <script type="text/javascript" src="js/index.js"></script>
 <script type="text/javascript">
-	
-	$(".search_a").toggle(
-		function(){
-			$(".search_a").css({background:"url(img/regular.png) no-repeat",backgroundPosition:"0px -36px"});
-			$(".search_tit").show("fast");
-			$(".search_list").show("slow");
-			$(".nav-center").css({opacity:"0"},200);
-			$(".cart").animate({opacity:"0"},200);
-			$(".user").animate({opacity:"0"},200);
-		},
-	
-		function(){
-			$(".search_tit").hide("slow");
-			$(".search_list").hide();
-			$(".nav-center").css({opacity:"1"},500);
-			$(".cart").animate({opacity:"1"},500);
-			$(".user").animate({opacity:"1"},500);
-			$(".search_a").css({backgroundImage:"url(img/icons.png)",backgroundPosition:"0px -30px"});	
-		}
-	);
-	
-	$(".search_input").click(function(){
-		$(".search_input").css({border:"none"});
-		$(".search_input").keydown(function(){
-			if($(".search_input")[0].value==""){
-				$(".search_input").css({border:"none"});
-			}else{
-				$(".search_input").css({placeholder:"none"});
-			}	
-		})
-	});
-	
+
 	for(let i=0;i<($(".search_pro")[0]).length;i++){
 		$($(".search_pro")[i]).mousemove(function(){
 			$($(".search_pro")[i]).css({backgroundColor:"#666"});
