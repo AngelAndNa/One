@@ -16,17 +16,34 @@
 				</div>
 				<div class="nav-center">
 					<ul class="uls">
-						<li class="one"><a href="">OnePlus 5</a><p></p></li>
-						<li class="market"><a href="">商城</a><p></p></li>
-						<li class="service"><a href="">服务</a><p></p></li>
-						<li class="blog"><a href="">博客</a><p></p></li>
-						<li class="forum"><a href="">论坛</a><p></p></li>
+						<li class="one"><a href="http://www.oneplus.cn/product/oneplus5">OnePlus 5</a></li>
+						<li class="lists market"><a href="http://store.oneplus.cn">商城</a></li>
+						<li class="lists service"><a href="http://service.oneplus.cn">服务</a></li>
+						<li class="lists blog"><a href="http://pr.oneplus.cn">博客</a></li>
+						<li class="lists forum"><a href="http://www.oneplusbbs.com">论坛</a></li>
 					</ul>
 				</div>
 				<div class="nav-right">
-					<p class="search"><a href=""></a></p>
-					<p class="cart"><a href=""></a><p class="no-goods">您的购物车里没有物品！</p></p>
-					<p class="user"><a href=""></a></p>
+					<div class="icons search">
+						<a class="search_a" href="#"></a>
+						<div class="search_tit">
+							<a class="search_icon" href="#"><img src="img/search.png"/></a>
+							<input class="search_input" type="text" placeholder="搜索您的商品名称" />
+						</div>
+						<div class="search_list">
+							<ul class="search_list_inner">
+								<li><a class="search_pro" href="http://www.oneplus.cn/product">OnePlus 3T</a></li>
+								<li><a class="search_pro" href="#">一加DASH闪充</a></li>
+								<li><a class="search_pro" href="#">一加3T个性保护壳</a></li>
+								<li><a class="search_pro" href="#">电子发票</a></li>
+							</ul>
+						</div>
+					</div>
+					<div class="icons cart">
+						<a class="cart_a" href="http://store.oneplus.cn/cart"></a>
+						<div class="no_goods">您的购物车里没有物品！</div>
+					</div>
+					<div class="icons user"><a href="login.html"></a></div>
 				</div>
 			</div>
 		</div>
@@ -34,14 +51,25 @@
 			<div class="login">
 				<div class="main_login">
 					<div class="login_word">登录</div>
-					<div class="login_user"></div>
-					<div class="login_pass"></div>
-					<div class="login_check"></div>
-					<div class="login_forget_pass"><a href="#">忘记密码？</a></div>
+					<div class="login_user" >
+						<input type="text" placeholder="手机、邮箱或用户名"/>
+					</div>
+					<div class="login_pass">
+						<input type="text" placeholder="密码"/>
+					</div>
+					<div class="login_check">
+						<div class="tk"> >> </div> 
+						<input type="text" placeholder="请按住拖快，拖到最右边"/>
+					</div>
+					<div class="login_forget_pass"><a href="http://account.oneplus.cn/login/forget">忘记密码？</a></div>
 					<div class="login_trues"><span>确认</span></div>
-					<div class="login_reg"><span>没有一加账户？</span><a href="#">立即注册</a></div>
+					<div class="login_reg"><span>没有一加账户？</span><a href="regist.html">立即注册</a></div>
 				</div>
-				
+				<div class="other_login">
+					<div class="other_word">选择其他方式登录</div>
+					<a class="qq_login" href="http://account.oneplus.cn/qqlogin"><img src="img/qq.png"/><span>QQ快捷登录</span></a>
+					<a class="wb_login" href="http://account.oneplus.cn/wblogin"><img src="img/weibo.png"/><span>微博快捷登录</span></a>
+				</div>
 			</div>
 		</div>
 		<div class="footer">
@@ -88,3 +116,6 @@
 		</div>
 	</body>
 </html>
+
+<script type="text/javascript" src="js/jquery-1.8.3.min.js" ></script>
+<script type="text/javascript" src="js/public.js" ></script>

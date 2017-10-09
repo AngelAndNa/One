@@ -1,0 +1,224 @@
+.header{
+    width:100%;
+    height:82px;
+    background: #f2f2f2;
+    padding-top:40px;
+}
+.inner_header{
+    width:630px;
+    height:82px;
+    margin:0 auto;
+   
+}
+.header a{
+    float: left;
+    width:105px;
+    height:82px;
+    text-align: center;
+    background: #ddd;
+    color:#333334;
+    font-size:14px;
+    background: pink;
+    
+}
+.header a p{
+    width:41px;
+    height:41px;
+    background: #cccccb;
+    border-radius:50%;
+    margin:10px auto;   
+}
+.phone{
+    background-image:url(../img/categoryicons.png);
+    background-position:0px -456px;
+    
+}
+.header a:nth-child(1):hover p{
+    background-position:0px -416px;
+}
+.header a:nth-child(1):hover span{
+     color:#FF0000;
+}
+
+.earphone{
+    background-image:url(../img/categoryicons.png);
+    background-position:0px -48px;
+}
+.header a:nth-child(2):hover p{
+    background-position:0px -8px;
+}
+.header a:nth-child(2):hover span{
+    color:#FF0000;
+}
+.ke{
+    background-image:url(../img/categoryicons.png);
+    background-position:0px -294px;
+}
+.header a:nth-child(3):hover p{
+    background-position:0px -251px;
+}
+.header a:nth-child(3):hover span{
+    color:#FF0000;
+}
+
+.spq{
+    background-image:url(../img/categoryicons.png);
+    background-position:0px -212px;
+}
+.header a:nth-child(4):hover p{
+    background-position:0px -172px;
+}
+.header a:nth-child(4):hover span{
+    color:#FF0000;
+}
+
+.tz{
+    background-image:url(../img/categoryicons.png);
+    background-position:0px -123px;
+}
+.header a:nth-child(5):hover p{
+    background-position:0px -84px;
+}
+.header a:nth-child(5):hover span{
+    color:#FF0000;
+}
+
+.live{
+    background-image:url(../img/categoryicons.png);
+    background-position:0px -367px;
+}
+.header a:nth-child(6):hover p{
+    background-position:0px -334px;
+}
+.header a:nth-child(6):hover span{
+    color:#FF0000;
+}
+.banner a{
+    width:100%;
+    height:500px;
+    background-image:url(../img/Bundle.jpg);
+    display: block;
+    background-position: center center;
+    background-size: cover;
+    position: relative;
+}
+.box{
+    width:100%;
+    padding:60px 0px;
+}
+.inner_box{
+    width:1200px;
+    margin:0 auto;
+    height:237px;  
+}
+.box a{
+    float:left;
+    width:365px;
+    height:237px;
+    margin-right:35px;
+}
+.box1{
+    width:100%;
+    height:940px;
+    background: #f2f2f2;
+    padding-top:20px;
+}
+.box1_main{
+    width:1222px;
+    height:436px;
+    margin:20px  auto;
+}
+.box1_main h2{
+    font-weight:100;
+    color:#3b3b3c;
+    line-height:66px;
+    margin-left:15px;
+}
+.box1_main a{
+    float:left;
+    width:285px;
+    height:356px;
+    margin-left:15px;
+    background:#fff;
+}
+
+.box1_main a img{
+    display: block;
+    width:183px;
+    height:183px;
+    margin:40px auto;
+}
+.box1_main a h3{
+    font-weight:100;
+    font-size:16px;
+    color:#11181e;
+    text-align: center;
+}
+.box1_main a span{
+    display: block;
+    width:30px;
+    height:20px;
+    font-size:14px;
+    color:#11181e;
+    margin:20px auto;
+}
+
+.box1_main a:hover{
+    box-shadow: 0px 17px 50px 0px rgba(0,0,0,.19);
+    transform: translate3d(0,-2px,0);
+    transition: all .3s cubic-bezier(.55,0,.1,1);
+}
+
+.designs{
+    width:100%;
+    height:184px;         
+}
+.items{
+    width:1200px;
+    height:123px;
+    margin:0 auto;
+    padding:30px 0px;
+    border-bottom: 1px solid #e4e4e4;
+}
+.lis{
+    width:300px;
+    height:123px;
+    list-style:none;
+    float:left;
+}
+.lis a{
+    display: block;
+    width:300px;
+    height:123px;
+    position:relative;
+}
+.lis a p{
+    width:80px;
+    height:80px;
+    position:absolute;
+    left:110px;
+    top:15px;
+}
+.lis a span{
+    color:#545861;
+    font-size:16px;
+    position:absolute;
+    left:100px;
+    bottom:5px;
+}
+.return-one{
+    background-image:url(../img/serviceIcons.png);
+    background-position:0px -400px;
+}
+.return-two{
+    background-image:url(../img/serviceIcons.png);
+    background-position:0px 0px;
+}
+.swap{
+    background-image:url(../img/serviceIcons.png);
+    background-position:0px 320px;
+}
+.free-send{
+    background-image:url(../img/serviceIcons.png);
+    background-position:0px 560px;
+}

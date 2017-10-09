@@ -1,10 +1,10 @@
 <!DOCTYPE html>
 <html>
 	<head>
-		<meta charset="utf-8" />
+		<meta charset="UTF-8">
+		<link rel="stylesheet" type="text/css" href="css/public.css" />
+		<link rel="stylesheet"  type="text/css" href="css/regist.css" />
 		<title></title>
-		<link rel="stylesheet" type="text/css" href="css/public.css"/>
-		<link rel="stylesheet" type="text/css" href="css/product.css"/>
 	</head>
 	<body>
 		<div class="nav">
@@ -47,45 +47,44 @@
 				</div>
 			</div>
 		</div>
-		<div class="box">
-			<div class="inner-box">
-				<div class="left-box">
-					<a class="oneplus" href="#">OnePlus 5</a>
-					<ul>
-						<li><a href="#camera">高清双摄</a></li>
-						<li><a href="#experience">体验</a></li>
-						<li><a href="#design">设计</a></li>
-						<li><a href="#color">颜色</a></li>
-						<li><a href="#charge">Dash闪充</a></li>
-						<li><a href="#screen">屏幕</a></li>
-						<li><a href="#network">网络</a></li>
-						<li><a href="#/product/oneplus5/specs">参数</a></li>
-					</ul>
+		<div class="middler">
+			<div class="regist">
+				<div class="main_regist">
+					<div class="regist_word">注册</div>
+					<div class="regist_user" >
+						<input type="text" placeholder="手机或邮箱"/>
+					</div>
+					<div class="regist_pass">
+						<input type="text" placeholder="密码6-16位，数字/字母/字符至少两种"/>
+					</div>
+					<div class="true_pass">
+						<input type="text" placeholder="确认密码"/>
+					</div>
+					<div class="regist_check">
+						<div class="tk"> >> </div> 
+						<input type="text" placeholder="请按住拖块，拖到最右边"/>
+					</div>
+					<div class="regist_tit">
+						<span>注册一加，即表示您同意一加的</span>
+						<a href="http://account.oneplus.cn/regist">用户协议</a>
+					</div>
+					<div class="regist_trues"><span>注册</span></div>
+					<div class="login">
+						
+						<a href="login.html">登录</a>
+						<div class="circle"></div>
+					</div>
 				</div>
-				<div class="right-box">
-					<a href="#">立即购买</a>
+				
+				<div class="other_login">
+					<div class="other_word">选择其他方式登录</div>
+					<a class="qq_login" href="http://account.oneplus.cn/qqlogin">
+						<img src="img/qq.png"/><span>QQ快捷登录</span>
+					</a>
+					<a class="wb_login" href="http://account.oneplus.cn/wblogin">
+						<img src="img/weibo.png"/><span>微博快捷登录</span>
+					</a>
 				</div>
-			</div>
-		</div>
-		<div class="box1">
-			<div class="box1_word">
-				<p>OnePlus 5</p>
-				<p>高清双摄 就是清晰</p>
-				<p> 
-					<span class="span_mon">￥</span>
-					<span class="span_num">2999</span>
-					<span class="span_word">起</span>
-				</p>
-				<p>
-					<ul class="box1_ul">
-						<li>月岩灰<span>|</span></li>
-						<li>星辰黑<span>|</span></li>
-						<li>薄荷金</li>
-					</ul>
-				</p>
-			</div>
-			<div class="box1_img">
-				<img src="img/gray-phone.png" />
 			</div>
 		</div>
 		<div class="footer">
@@ -132,23 +131,6 @@
 		</div>
 	</body>
 </html>
-<script type="text/javascript" src="js/jquery-1.8.3.min.js"></script>
-<script type="text/javascript" src="js/public.js"></script>
-<script type="text/javascript">
-	
 
-var maxScrollTop = 0;
-window.onload = function(){
-	maxScrollTop=document.getElementsByClassName("box").offsetTop;
-}
-window.onscroll = function(){
-	var scrollTop = document.body.scrollTop || document.documentElement.scrollTop;
-	if(scrollTop>=maxScrollTop){
-		document.getElementsByClassName("box").style.position = "fixed";
-		document.getElementsByClassName("box").style.top = "0px";
-		
-	}else if(scrollTop<=maxScrollTop){
-		document.getElementsByClassName("box").style.position = "static";
-	}
-}
-</script>
+<script type="text/javascript" src="js/jquery-1.8.3.min.js" ></script>
+<script type="text/javascript" src="js/public.js" ></script>

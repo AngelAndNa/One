@@ -1,62 +1,73 @@
 .middler {
   width: 100%;
-  height: 406px;
+  height: 480px;
   background: #e5e5e5;
   padding: 60px 0px; }
 
-.login {
+.regist {
   width: 690px;
-  height: 376px;
+  height: 440px;
   background: #efefef;
   margin: 0 auto;
-  padding: 15px 25px; }
+  padding: 20px 25px; }
 
-.main_login {
+.main_regist {
   width: 331px;
-  height: 376px;
+  height: 440px;
   border-right: 1px solid #ddd;
   float: left; }
 
-.login_word {
+.regist_word {
   width: 300px;
   height: 56px;
   line-height: 56px; }
 
-.login_user {
+.regist_user {
   width: 300px;
   height: 45px;
   line-height: 45px;
   background: #fff;
-  border-radius: 5px;
   margin-bottom: 10px; }
 
-.login_user input {
+.regist_user input {
   display: block;
   width: 300px;
   height: 45px;
   line-height: 45px;
   border: none;
-  border-radius: 5px;
   text-indent: 15px; }
 
-.login_pass {
+.regist_pass {
   width: 300px;
   height: 45px;
   line-height: 45px;
   background: #fff;
-  border-radius: 5px;
   margin-bottom: 10px; }
 
-.login_pass input {
+.regist_pass input {
   display: block;
   width: 300px;
   height: 45px;
   line-height: 45px;
   border: none;
-  border-radius: 5px;
   text-indent: 15px; }
 
-.login_check {
+.true_pass {
+  width: 300px;
+  height: 45px;
+  line-height: 45px;
+  background: #fff;
+  margin-bottom: 10px; }
+
+.true_pass input {
+  display: block;
+  width: 300px;
+  height: 45px;
+  line-height: 45px;
+  border: none;
+  text-indent: 15px; }
+
+.regist_check {
   width: 300px;
   height: 35px;
   background: red; }
@@ -70,7 +81,7 @@
   line-height: 33px;
   background: #fff; }
 
-.login_check input {
+.regist_check input {
   float: left;
   width: 262px;
   height: 35px;
@@ -78,32 +89,49 @@
   border: none;
   text-indent: 30px; }
 
-.login_forget_pass {
+.regist_tit {
   width: 300px;
   height: 50px;
-  font-size: 14px;
-  text-align: right;
+  font-size: 12px;
   line-height: 76px; }
 
-.login_trues {
+.regist_tit a {
+  color: #009ACD; }
+
+.regist_trues {
   width: 300px;
   height: 60px;
   background: #eb0028;
-  border-radius: 8px;
   text-align: center;
   line-height: 60px;
   color: #fff;
   margin: 15px 0px; }
 
-.login_reg {
+.login {
   width: 300px;
-  height: 40px;
-  line-height: 40px;
-  font-size: 14px; }
+  height: 20px;
+  padding: 15px 0px; }
+
+.circle {
+  width: 0px;
+  height: 0px;
+  border-top: 6px solid transparent;
+  border-left: 6px solid #009ACD;
+  border-bottom: 6px solid transparent;
+  float: right;
+  margin-right: 5px; }
+
+.login a {
+  font-size: 14px;
+  width: 35px;
+  height: 20px;
+  line-height: 10px;
+  float: right;
+  color: #009acd; }
 
 .other_login {
   width: 331px;
-  height: 376px;
+  height: 440px;
   float: left;
   margin-left: 25px; }
 
@@ -155,5 +183,3 @@
   font-size: 14px; }
 
 /*# sourceMappingURL=regist.css.map */
-
-/*# sourceMappingURL=login.css.map */
