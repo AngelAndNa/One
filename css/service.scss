@@ -1,0 +1,117 @@
+.service_banner{
+    width:100%;
+    height:400px;
+    background-image:url(../img/banner_large.jpg);
+    background-size:cover;
+    text-align: center;
+    display:table;
+}
+.service_banner div{
+    display: table-cell;
+    vertical-align: middle;
+    text-align: center;
+    width: 100%;
+    height: 100%;
+}
+.service_banner h2{
+    font-size: 50px;
+    color: #fff;
+    font-weight: 100;
+    line-height: 53px;
+    display: inline;
+}
+.service_nav{
+    padding: 60px 0 80px;
+    width: 1200px;
+    height:560px;
+    margin: 0 auto;
+    background:pink; 
+}
+.service_nav_uls{
+    width:900px;
+    height:100px;
+    padding-bottom:60px;
+    background: #eee;
+    margin:0 auto;
+}
+.service_nav_uls li{
+    float:left;
+    width:25%;
+    height:100px;
+    text-align: center;
+}
+.service_nav_uls li span{
+    display: block;
+    width:60px;
+    height:60px;
+    margin:0 auto 20px;
+    background:url(../img/serviceicons-scead7.png) no-repeat;
+}
+.service_nav_uls li:nth-child(1) span {
+    background-position:0px -292px ;
+}
+.service_nav_uls li:nth-child(2) span {
+    background-position:0px -53px ;
+}
+.service_nav_uls li:nth-child(3) span {
+    background-position:0px -171px ;
+}
+.service_nav_uls li:nth-child(4) span {
+    background-position:0px -516px ;
+}
+.service_nav_uls li h4{
+    color:#10181f;
+}
+.service_nav_div{
+    width:1200px;
+    height:400px;
+    background:red;
+}
+.service_nav_div div{
+    width:580px;
+    height:260px;
+    float:left;
+    margin-left:15px;
+    position: relative;
+}
+.service_nav_div a{
+    width:580px;
+    height:260px;
+    position: absolute;
+    left:0px;
+    top:0px; 
+    text-align: center;
+    transition: all 1s;
+}
+.service_nav_div div:first-child a{
+    background:url(../img/img-jdb.jpg) no-repeat center;
+    background-size:cover;
+}
+.service_nav_div div:last-child a{
+    background:url(../img/img-yjys.jpg) no-repeat center;
+     background-size:cover;  
+}   
+//.service_nav_div div:hover a{
+//  background-size:cover;
+//  overflow:hidden;
+//  transition: all 1s;
+//} 
+.service_nav_div div a span{
+    width:80px;
+    height:80px;
+    display: block;
+    margin:65px auto 30px;
+    background:url(../img/serviceicons-scead7.png) no-repeat;
+}
+.service_nav_div div:first-child span{
+   background-position:0px -415px;
+} 
+.service_nav_div div:last-child span{
+   background-position:0px -1125px;
+    
+}
+.service_nav_div div h4{
+    font-weight:100;
+    color:#fff;
+}
+

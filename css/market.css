@@ -13,61 +13,55 @@
   float: left;
   width: 105px;
   height: 82px;
-  text-align: center;
-  background: #ddd;
   color: #333334;
   font-size: 14px;
-  background: pink; }
+  text-align: center; }
 
 .header a p {
   width: 41px;
   height: 41px;
   background: #cccccb;
   border-radius: 50%;
-  margin: 10px auto; }
+  margin: 10px auto;
+  background-image: url(../img/categoryicons.png); }
 
-.phone {
-  background-image: url(../img/categoryicons.png);
-  background-position: 0px -456px; }
+.header a:nth-child(1) p {
+  background-position: 0px -452px; }
 
 .header a:nth-child(1):hover p {
-  background-position: 0px -416px; }
+  background-position: 0px -412px; }
 
 .header a:nth-child(1):hover span {
   color: #FF0000; }
 
-.earphone {
-  background-image: url(../img/categoryicons.png);
-  background-position: 0px -48px; }
+.header a:nth-child(2) p {
+  background-position: 0px -41px; }
 
 .header a:nth-child(2):hover p {
-  background-position: 0px -8px; }
+  background-position: 0px -1px; }
 
 .header a:nth-child(2):hover span {
   color: #FF0000; }
 
-.ke {
-  background-image: url(../img/categoryicons.png);
-  background-position: 0px -294px; }
+.header a:nth-child(3) p {
+  background-position: -2px -288px; }
 
 .header a:nth-child(3):hover p {
-  background-position: 0px -251px; }
+  background-position: -2px -248px; }
 
 .header a:nth-child(3):hover span {
   color: #FF0000; }
 
-.spq {
-  background-image: url(../img/categoryicons.png);
-  background-position: 0px -212px; }
+.header a:nth-child(4) p {
+  background-position: 0px -205px; }
 
 .header a:nth-child(4):hover p {
-  background-position: 0px -172px; }
+  background-position: 0px -166px; }
 
 .header a:nth-child(4):hover span {
   color: #FF0000; }
 
-.tz {
-  background-image: url(../img/categoryicons.png);
+.header a:nth-child(5) p {
   background-position: 0px -123px; }
 
 .header a:nth-child(5):hover p {
@@ -76,12 +70,11 @@
 .header a:nth-child(5):hover span {
   color: #FF0000; }
 
-.live {
-  background-image: url(../img/categoryicons.png);
-  background-position: 0px -367px; }
+.header a:nth-child(6) p {
+  background-position: 0px -369px; }
 
 .header a:nth-child(6):hover p {
-  background-position: 0px -334px; }
+  background-position: 0px -329px; }
 
 .header a:nth-child(6):hover span {
   color: #FF0000; }

@@ -40,7 +40,7 @@
 						</div>
 					</div>
 					<div class="icons cart">
-						<a class="cart_a" href="http://store.oneplus.cn/cart"></a>
+						<a class="cart_a" href="cart.html"></a>
 						<div class="no_goods">您的购物车里没有物品！</div>
 					</div>
 					<div class="icons user"><a href="login.html"></a></div>
@@ -51,15 +51,15 @@
 			<div class="login">
 				<div class="main_login">
 					<div class="login_word">登录</div>
-					<div class="login_user" >
+					<div class="login_user logins" >
 						<input type="text" placeholder="手机、邮箱或用户名"/>
 					</div>
-					<div class="login_pass">
+					<div class="login_pass logins">
 						<input type="text" placeholder="密码"/>
 					</div>
 					<div class="login_check">
 						<div class="tk"> >> </div> 
-						<input type="text" placeholder="请按住拖快，拖到最右边"/>
+						<input type="text" placeholder="请按住滑块，拖动到最右边"/>
 					</div>
 					<div class="login_forget_pass"><a href="http://account.oneplus.cn/login/forget">忘记密码？</a></div>
 					<div class="login_trues"><span>确认</span></div>
@@ -67,8 +67,13 @@
 				</div>
 				<div class="other_login">
 					<div class="other_word">选择其他方式登录</div>
-					<a class="qq_login" href="http://account.oneplus.cn/qqlogin"><img src="img/qq.png"/><span>QQ快捷登录</span></a>
-					<a class="wb_login" href="http://account.oneplus.cn/wblogin"><img src="img/weibo.png"/><span>微博快捷登录</span></a>
+					<a class="qq_login" href="http://account.oneplus.cn/qqlogin">
+						<span></span>
+						<span>QQ快捷登录</span></a>
+					<a class="wb_login" href="http://account.oneplus.cn/wblogin">
+						<span></span>
+						<span>微博快捷登录</span>
+					</a>
 				</div>
 			</div>
 		</div>
@@ -119,3 +124,32 @@
 
 <script type="text/javascript" src="js/jquery-1.8.3.min.js" ></script>
 <script type="text/javascript" src="js/public.js" ></script>
+<script type="text/javascript" src="js/eventTools.js" ></script>
+<script type="text/javascript">
+	window.onload = function(){
+	var isDown = false;
+	var offsetX;
+	var offsetY;
+	document.getElementsByClassName("tk").onmousedown = function(event){
+		var evt = event || window.event;
+		offsetX = evt.offsetX;
+		offsetY = evt.offsetY;
+		isDown = true;
+		preventDefault(evt);
+	}
+	
+	document.body.onmousemove = function(event){
+		if(isDown){
+			var evt = event || window.event;
+			document.getElementsByClassName("tk").style.left = evt.pageX-offsetX+"px";
+			document.getElementsByClassName("tk").style.top = evt.pageY-offsetY+"px";
+		}
+		preventDefault1705(evt);
+	}
+	
+	document.getElementsByClassName("tk").onmouseup = function(){
+		isDown = false;
+	}
+	
+}
+</script>

@@ -1,32 +1,35 @@
 <!DOCTYPE html>
 <html>
 	<head>
-		<meta charset="utf-8" />
+		<meta charset="UTF-8">
+		<link rel="stylesheet" href="css/public.css" />
+		<link rel="stylesheet" href="css/phones.css" />
 		<title></title>
-		<link rel="stylesheet" type="text/css" href="css/index.css"/>
-		<link rel="stylesheet" type="text/javascript" href="js/index.js"/>
 	</head>
 	<body>
-		<div id="toper">
-			<p>
-				<a href="#">回收你的旧手机、平板电脑，拿 OnePlus 5 优惠补贴>></a>
-				<a href="#" id="close"><img src="img/close.png"/></a>
-			</p>
-		</div>
 		<div class="nav">
 			<div class="nav-box">
 				<div class="nav-logo">
-					<a href="#http://www.oneplus.cn" title="官网首页" alt="官网首页">
+					<a href="http://www.oneplus.cn" title="官网首页" alt="官网首页">
 						<img src="img/logo.png"/>
 					</a>
 				</div>
 				<div class="nav-center">
 					<ul class="uls">
-						<li class="one"><a href="product.html">OnePlus 5</a></li>
-						<li class="lists market"><a href="market.html">商城</a></li>
-						<li class="lists service"><a href="service.html">服务</a></li>
-						<li class="lists blog"><a href="http://pr.oneplus.cn">博客</a></li>
-						<li class="lists forum"><a href="http://www.oneplusbbs.com">论坛</a></li>
+						<li class="one">
+							<a href="http://www.oneplus.cn/product/oneplus5">OnePlus 5</a>
+						</li>
+						<li class="lists market">
+							<a href="http://store.oneplus.cn">商城</a></li>
+						<li class="lists service">
+							<a href="http://service.oneplus.cn">服务</a>
+						</li>
+						<li class="lists blog">
+							<a href="http://pr.oneplus.cn">博客</a>
+						</li>
+						<li class="lists forum">
+							<a href="http://www.oneplusbbs.com">论坛</a>
+						</li>
 					</ul>
 				</div>
 				<div class="nav-right">
@@ -53,59 +56,36 @@
 				</div>
 			</div>
 		</div>
-		<div class="banner">
-			<a href="http://www.oneplus.cn/product/oneplus5"><img src="img/bg.jpg"/></a>
-			<p class="moves one_p">OnePlus 5</p>
-			<p class="moves two_p">高清双摄 就是清晰</p>
-			<p class="moves three_p">￥<span>2999起</span></p>
-			<a class="moves one_a" href="http://www.oneplus.cn/product/oneplus5">了解更多</a>
-			<p class="moves four_p">骁龙 835 处理器 | 6/8GB 大内存 | Dash 闪充</p>
+		<div class="header">
+			<div class="inner_header">
+				<a href="">
+					<p class="phone"></p>
+					<span>手机</span>
+				</a>
+				<a href="">
+					<p class="earphone"></p>
+					<span>耳机/音箱</span>
+				</a>
+				<a href="">
+					<p class="ke"></p>
+					<span>壳/后盖/膜</span>
+				</a>
+				<a href="">
+					<p class="spq"></p>
+					<span>适配器/数据线</span>
+				</a>
+				<a href="">
+					<p class="tz"></p>
+					<span>套装</span>
+				</a>
+				<a href="">
+					<p class="life"></p>
+					<span>生活馆</span>
+				</a>
+			</div>	
 		</div>
-		<div class="imgList">
-			<ul class="ulList">
-				<li><img src="img/b.jpg"/></li>
-				<li><img src="img/d.jpg"/></li>
-				<li><img src="img/e.jpg"/></li>
-			</ul>
-		</div>
-		<div class="session">
-			<p>Shot on OnePlus</p>
-			<a id="btn" href="http://photos.oneplus.cn">
-				<span class="join">我要参加</span>
-				<div id="progress"></div>
-			</a>
-		</div>
-		<div class="box">
-			<ul class="ulItem">
-				<li class="list">
-					<img src="img/a.jpg" />
-					<div class="list-first">
-						<a href="http://pr.oneplus.cn/blog">
-							<h3>博客</h3>
-							<p>OnePlus 携手 COSTA,一次优雅的咖啡之旅。</p>
-						</a>
-					</div>
-				</li>
-				<li class="list">
-					<img src="img/f.jpg"/>
-					<div class="list-two">
-						<a href="http://pr.oneplus.cn/news">
-							<h3>新闻</h3>
-							<p>OnePlus 5的媒体评测汇总。</p>
-						</a>
-					</div>
-				</li>
-				<li class="list">
-					<img src="img/c.jpg"/>
-					<div class="list-three">
-						<a href="http://pr.oneplus.cn/views">
-							<h3>视频</h3>
-							<p>OnePlus 5月岩灰，优雅含蓄的性能王者。</p>
-						</a>
-					</div>
-				</li>
-			</ul>
-		</div>
+		
+		
 		<div class="designs">
 			<ul class="items">
 				<li class="lis first">
@@ -184,21 +164,6 @@
 				</a>
 			</div>
 		</div>
+		
 	</body>
 </html>
-<script type="text/javascript" src="js/jquery-1.8.3.min.js"></script>
-<script type="text/javascript" src="js/index.js"></script>
-<script type="text/javascript">
-
-	for(let i=0;i<($(".search_pro")[0]).length;i++){
-		$($(".search_pro")[i]).mousemove(function(){
-			$($(".search_pro")[i]).css({backgroundColor:"#666"});
-		})
-	}
-	
-	
-	
-
-
-
-</script>

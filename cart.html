@@ -1,10 +1,9 @@
 <!DOCTYPE html>
 <html>
 	<head>
-		<meta charset="utf-8" />
+		<meta charset="UTF-8">
+		<link rel="stylesheet" type="text/css" href="css/cart.css" />
 		<title></title>
-		<link rel="stylesheet" type="text/css" href="css/public.css"/>
-		<link rel="stylesheet" type="text/css" href="css/product.css"/>
 	</head>
 	<body>
 		<div class="nav">
@@ -17,7 +16,7 @@
 				<div class="nav-center">
 					<ul class="uls">
 						<li class="one"><a href="http://www.oneplus.cn/product/oneplus5">OnePlus 5</a></li>
-						<li class="lists market"><a href="http://store.oneplus.cn">商城</a></li>
+						<li class="lists market"><a href="market.html">商城</a></li>
 						<li class="lists service"><a href="http://service.oneplus.cn">服务</a></li>
 						<li class="lists blog"><a href="http://pr.oneplus.cn">博客</a></li>
 						<li class="lists forum"><a href="http://www.oneplusbbs.com">论坛</a></li>
@@ -40,53 +39,62 @@
 						</div>
 					</div>
 					<div class="icons cart">
-						<a class="cart_a" href="cart.html"></a>
+						<a class="cart_a" href="http://store.oneplus.cn/cart"></a>
 						<div class="no_goods">您的购物车里没有物品！</div>
 					</div>
 					<div class="icons user"><a href="login.html"></a></div>
 				</div>
 			</div>
 		</div>
-		<div class="box">
-			<div class="inner-box">
-				<div class="left-box">
-					<a class="oneplus" href="#">OnePlus 5</a>
-					<ul>
-						<li><a href="#camera">高清双摄</a></li>
-						<li><a href="#experience">体验</a></li>
-						<li><a href="#design">设计</a></li>
-						<li><a href="#color">颜色</a></li>
-						<li><a href="#charge">Dash闪充</a></li>
-						<li><a href="#screen">屏幕</a></li>
-						<li><a href="#network">网络</a></li>
-						<li><a href="#/product/oneplus5/specs">参数</a></li>
-					</ul>
-				</div>
-				<div class="right-box">
-					<a href="#">立即购买</a>
+		<div class="cart_main">
+			<div class="flow_line">
+				<span class="flow_line_name flow_line_cart">购物车</span>
+				<span class="flow_line_name flow_line_order">填写订单</span>
+				<span class="flow_line_name flow_line_pay">完成支付</span>
+				<span class="flow_line_red"></span>
+				<span class="flow_line_circle flow_line_first"></span>
+				<span class="flow_line_circle flow_line_second"></span>
+				<span class="flow_line_circle flow_line_third"></span>
+			</div>
+			<div class="box"></div>
+			<div class="empty_cart">
+				<div class="cart_img"></div>
+				<div class="cart_word">您的购物车里面没有物品！</div>
+				<div class="goshapping">
+					<a class="shapping" href="market.html">
+						<span class="go">去购物</span>
+						<div class="gos"></div>
+					</a>
 				</div>
 			</div>
 		</div>
-		<div class="box1">
-			<div class="box1_word">
-				<p>OnePlus 5</p>
-				<p>高清双摄 就是清晰</p>
-				<p> 
-					<span class="span_mon">￥</span>
-					<span class="span_num">2999</span>
-					<span class="span_word">起</span>
-				</p>
-				<p>
-					<ul class="box1_ul">
-						<li>月岩灰<span>|</span></li>
-						<li>星辰黑<span>|</span></li>
-						<li>薄荷金</li>
-					</ul>
-				</p>
-			</div>
-			<div class="box1_img">
-				<img src="img/gray-phone.png" />
-			</div>
+		<div class="designs">
+			<ul class="items">
+				<li class="lis first">
+					<a href="http://service.oneplus.cn">
+						<p class="return-one"></p>
+						<span>7天无理由退货</span>
+					</a>
+				</li>
+				<li class="lis two">
+					<a href="http://service.oneplus.cn">
+						<p class="return-two"></p>
+						<span>15天退货保障</span>
+					</a>
+				</li>
+				<li class="lis three">
+					<a href="http://service.oneplus.cn">
+						<p class="swap"></p>
+						<span>30天换货保障</span>
+					</a>
+				</li>
+				<li class="lis four">
+					<a href="http://service.oneplus.cn">
+						<p class="free-send"></p>
+						<span>99元全场包邮</span>
+					</a>
+				</li>
+			</ul>
 		</div>
 		<div class="footer">
 			<div class="ints">
@@ -125,30 +133,32 @@
 		<div class="bottom">
 			<div class="bottoms">
 				<span class="sp">© 2013-2017 OnePlus. All Rights Reserved. (粤ICP备13088308号-1)</span>
-				<a class="cnnic" href="#"><img class="cn" src="img/cnnic.png"</a>
-				<a class="record" href="#"><img class="re"src="img/record.png"/><span class="rec">粤公网安备 44030402000178号 </span></a>
-				<a class="china" href="#"><span class="cha">Change location</span><img class="ch"src="img/china.png"/></a>
+				<a class="cnnic" href="#">
+					<img class="cn" src="img/cnnic.png"/>
+				</a>
+				<a class="record" href="#">
+					<img class="re"src="img/record.png"/>
+					<span class="rec">粤公网安备 44030402000178号 </span>
+				</a>
+				<a class="china" href="#">
+					<span class="cha">Change location</span>
+					<img class="ch"src="img/china.png"/>
+				</a>
 			</div>
 		</div>
 	</body>
 </html>
-<script type="text/javascript" src="js/jquery-1.8.3.min.js"></script>
-<script type="text/javascript" src="js/public.js"></script>
+<script type="text/javascript" src="js/jquery-1.8.3.min.js" ></script>
 <script type="text/javascript">
-	
-
-var maxScrollTop = 0;
-window.onload = function(){
-	maxScrollTop=document.getElementsByClassName("box").offsetTop;
-}
-window.onscroll = function(){
-	var scrollTop = document.body.scrollTop || document.documentElement.scrollTop;
-	if(scrollTop>=maxScrollTop){
-		document.getElementsByClassName("box").style.position = "fixed";
-		document.getElementsByClassName("box").style.top = "0px";
-		
-	}else if(scrollTop<=maxScrollTop){
-		document.getElementsByClassName("box").style.position = "static";
-	}
-}
+	$($(".shapping")).mouseenter(function(){ 
+			$(".gos").animate({width:"200px"},100);
+			$(".go").css({color:"#fff",zIndex:"999"});
+			console.log("mouseover");
+			
+	});	
+	$($(".shapping")).mouseleave(function(){
+			$(".gos").animate({width:"0px"},100);
+			$(".go").css({color:"#eb0028"});
+			
+	});
 </script>

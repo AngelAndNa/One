@@ -186,6 +186,143 @@ a{
 	background-position:-3px -241px;	
 }
 
+
+.header{
+    width:100%;
+    height:82px;
+    background: #f2f2f2;
+    padding-top:40px;
+}
+.inner_header{
+    width:630px;
+    height:82px;
+    margin:0 auto;  
+}
+.header a{
+    float: left;
+    width:105px;
+    height:82px;
+    color:#333334;
+    font-size:14px;
+    text-align: center;
+}
+.header a p{
+    width:41px;
+    height:41px;
+    background: #cccccb;
+    border-radius:50%;
+    margin:10px auto; 
+    background-image: url(../img/categoryicons.png);
+}
+.header a:nth-child(1) p{
+    background-position:0px -452px;
+}
+.header a:nth-child(1):hover p{
+    background-position:0px -412px;
+}
+.header a:nth-child(1):hover span{
+     color:#FF0000;
+}
+.header a:nth-child(2) p{
+    background-position:0px -41px;
+}
+.header a:nth-child(2):hover p{
+    background-position:0px -1px;
+}
+.header a:nth-child(2):hover span{
+    color:#FF0000;
+}
+.header a:nth-child(3) p{
+    background-position:-2px -288px;
+}
+.header a:nth-child(3):hover p{
+    background-position:-2px -248px;
+}
+.header a:nth-child(3):hover span{
+    color:#FF0000;
+}
+.header a:nth-child(4) p{
+    background-position:0px -205px;
+}
+.header a:nth-child(4):hover p{
+    background-position:0px -166px;
+}
+.header a:nth-child(4):hover span{
+    color:#FF0000;
+}
+.header a:nth-child(5) p{
+    background-position:0px -123px;
+}
+.header a:nth-child(5):hover p{
+    background-position:0px -84px;
+}
+.header a:nth-child(5):hover span{
+    color:#FF0000;
+}
+.header a:nth-child(6) p{
+    background-position:0px -369px;
+}
+.header a:nth-child(6):hover p{
+    background-position:0px -329px;
+}
+.header a:nth-child(6):hover span{
+    color:#FF0000;
+}
+
+.designs{
+    width:100%;
+    height:184px;         
+}
+.items{
+    width:1200px;
+    height:123px;
+    margin:0 auto;
+    padding:30px 0px;
+    border-bottom: 1px solid #e4e4e4;
+}
+.lis{
+    width:300px;
+    height:123px;
+    list-style:none;
+    float:left;
+}
+.lis a{
+    display: block;
+    width:300px;
+    height:123px;
+    position:relative;
+}
+.lis a p{
+    width:80px;
+    height:80px;
+    position:absolute;
+    left:110px;
+    top:15px;
+}
+.lis a span{
+    color:#545861;
+    font-size:16px;
+    position:absolute;
+    left:100px;
+    bottom:5px;
+}
+.return-one{
+    background-image:url(../img/serviceIcons.png);
+    background-position:0px -400px;
+}
+.return-two{
+    background-image:url(../img/serviceIcons.png);
+    background-position:0px 0px;
+}
+.swap{
+    background-image:url(../img/serviceIcons.png);
+    background-position:0px 320px;
+}
+.free-send{
+    background-image:url(../img/serviceIcons.png);
+    background-position:0px 560px;
+}
+
 .footer{
 	width:1200px;
 	height:174px;

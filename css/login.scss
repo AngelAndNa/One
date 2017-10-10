@@ -21,39 +21,23 @@
   width: 300px;
   height: 56px;
   line-height: 56px; }
-
-.login_user {
-  width: 300px;
+.logins{
+   width: 300px;
   height: 45px;
   line-height: 45px;
   background: #fff;
-  border-radius: 5px;
-  margin-bottom: 10px; }
+  border-radius: 5px;  
+  margin-bottom: 10px; 
+}
 
-.login_user input {
+.logins input {
   display: block;
   width: 300px;
   height: 45px;
   line-height: 45px;
   border: none;
   border-radius: 5px;
-  text-indent: 15px; }
-
-.login_pass {
-  width: 300px;
-  height: 45px;
-  line-height: 45px;
-  background: #fff;
-  border-radius: 5px;
-  margin-bottom: 10px; }
-
-.login_pass input {
-  display: block;
-  width: 300px;
-  height: 45px;
-  line-height: 45px;
-  border: none;
-  border-radius: 5px;
+  outline:none;
   text-indent: 15px; }
 
 .login_check {
@@ -122,11 +106,18 @@
   margin-bottom: 15px;
   padding-top: 13px; }
 
-.qq_login img {
+.qq_login span:first-child{
   float: left;
+  width:17px;
+  height:20px;
+  background:url(../img/icons-s3764b6bca5.png) no-repeat;
+  background-position:0px -1215px;
   margin-left: 80px; }
-
-.qq_login span {
+  
+.qq_login:hover{
+    background:#15a2c8;
+}
+.qq_login span:last-child{
   float: left;
   margin-left: 5px;
   color: #fff;
@@ -143,15 +134,21 @@
   margin-bottom: 15px;
   padding-top: 13px; }
 
-.wb_login img {
+.wb_login span:first-child{
   float: left;
+  width:23px;
+  height:19px;
+  background:url(../img/icons-s3764b6bca5.png) no-repeat;
+  background-position:0px -1722px;
   margin-left: 78px; }
 
-.wb_login span {
+.wb_login span:last-child{
   float: left;
   margin-left: 5px;
   color: #000;
   text-align: center;
   font-size: 14px; }
-
+.wb_login:hover{
+    background:#ddd;
+}
 /*# sourceMappingURL=regist.css.map */

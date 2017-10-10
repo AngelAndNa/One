@@ -236,5 +236,19 @@
 <script type="text/javascript" src="js/jquery-1.8.3.min.js" ></script>		
 <script type="text/javascript" src="js/public.js" ></script>
 <script type="text/javascript">
-	
+	var scrollTop=0;
+	var tops=0;
+	$(document).scroll(function(){
+		scrollTop=$(document).scrollTop();
+		tops=$(".header").offset().top;
+		if(scrollTop>=tops){
+			$(".header").css({position:"fixed",top:"0px",zIndex:"999"});
+//			console.log(scrollTop);
+			console.log(tops);
+		}else if(scrollTop<=tops){
+			$(".header").css({position:"static"});
+			console.log(scrollTop);
+			console.log(tops);
+		}
+	});	
 </script>
