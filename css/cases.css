@@ -1,0 +1,6 @@
+.cases_banner{
+	width:100%;
+	/*height:*/
+	background-image:url(../img/cases-plate.jpg);
+	background-size:cover;
+}

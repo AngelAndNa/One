@@ -43,18 +43,26 @@
 .login_check {
   width: 300px;
   height: 35px;
-  background: red; }
+  position: relative; }
 
 .tk {
+  position: absolute;
+  left: 0px;
+  top: 0px;
   width: 36px;
   height: 33px;
   border: 1px solid #ddd;
   float: left;
   text-align: center;
   line-height: 33px;
-  background: #fff; }
+  background: #fff;
+  cursor: move;
+  z-index: 999; }
 
 .login_check input {
+  position: absolute;
+  left: 38px;
+  top: 0px;
   float: left;
   width: 262px;
   height: 35px;
@@ -77,6 +85,8 @@
   text-align: center;
   line-height: 60px;
   color: #fff;
+  border: none;
+  outline: none;
   margin: 15px 0px; }
 
 .login_reg {

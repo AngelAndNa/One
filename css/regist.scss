@@ -23,50 +23,60 @@
     height:56px;
     line-height:56px;
 }
-.regist_user{
+.regist_progress{
     width:300px;
     height:45px;
     line-height:45px;
     background:#fff;
-    margin-bottom:10px;;
+    margin-bottom:20px;
+    position: relative;
 }
-.regist_user input{
+.regist_progress input{
     display: block;
+    position:absolute;
+    left:0px;
+    top:0px;
     width:300px;
     height:45px;
     line-height:45px;
     border:none;
     text-indent: 15px;;
 }
-.regist_pass{
-    width:300px;
-    height:45px;
-    line-height:45px;
-    background:#fff;
-    margin-bottom:10px;
+.userName_tit{
+   width:300px;
+   height:15px;
+   font-size:12px;
+   text-align: center;
+   line-height:15px;
+   background:pink;
+   position:absolute;
+   left:0px;
+   top:46px;  
+   opacity:0;
 }
-.regist_pass input{
-    display: block;
-    width:300px;
-    height:45px;
-    line-height:45px;
-    border:none;
-    text-indent: 15px;;
+.userPass_tit{
+   width:300px;
+   height:15px;
+   font-size:12px;
+   text-align: center;
+   line-height:15px;
+   background:pink;
+   position:absolute;
+   left:0px;
+   top:46px;  
+   opacity:0;
 }
-.true_pass{
-    width:300px;
-    height:45px;
-    line-height:45px;
-    background:#fff;
-    margin-bottom:10px;
-}
-.true_pass input{
-    display: block;
-    width:300px;
-    height:45px;
-    line-height:45px;
-    border:none;
-    text-indent: 15px;;
+.rePass_tit{
+   width:300px;
+   height:15px;
+   font-size:12px;
+   text-align: center;
+   line-height:15px;
+   background:pink;
+   position:absolute;
+   left:0px;
+   top:46px;  
+   opacity:0;
 }
 .regist_check{
     width:300px;
@@ -88,6 +98,7 @@
     height:35px;
     background:#ddd;
     border:none;
+    outline:none;
     text-indent: 30px;
 }
 .regist_tit{
@@ -106,6 +117,7 @@
     text-align: center;
     line-height:60px;
     color:#fff;
+    border:none;
     margin:15px 0px;
 }
 .login{
@@ -131,56 +143,71 @@
     color:#009acd;
 }
 
-.other_login{
-    width:331px;
-    height:440px;
-    float:left;
-    margin-left:25px;
+
+.other_login {
+  width: 331px;
+  height: 376px;
+  float: left;
+  margin-left: 25px; }
+
+.other_word {
+  width: 300px;
+  height: 56px;
+  line-height: 56px; }
+
+.qq_login {
+  display: block;
+  width: 300px;
+  height: 32px;
+  line-height: 24px;
+  background: #17b4df;
+  border-radius: 5px;
+  margin-bottom: 15px;
+  padding-top: 13px; }
+
+.qq_login span:first-child{
+  float: left;
+  width:17px;
+  height:20px;
+  background:url(../img/icons-s3764b6bca5.png) no-repeat;
+  background-position:0px -1215px;
+  margin-left: 80px; }
+  
+.qq_login:hover{
+    background:#15a2c8;
 }
-.other_word{
-    width:300px;
-    height:56px;
-    line-height:56px;
-}
-.qq_login{
-    display:block;
-    width:300px;
-    height:32px;
-    line-height:24px;
-    background:#17b4df;
-    border-radius: 5px;
-    margin-bottom:15px;
-    padding-top:13px;
-}
-.qq_login img{
-    float:left;
-    margin-left:80px;
-}
-.qq_login span{
-    float:left;
-    margin-left:5px;
-    color:#fff;
-    text-align: center;
-    font-size:14px;
-}
-.wb_login{
-    display:block;
-    width:300px;
-    height:32px;
-    line-height:24px;
-    background:#fff;
-    border-radius: 5px;
-    margin-bottom:15px;
-    padding-top:13px;
-}
-.wb_login img{
-    float:left;
-    margin-left:78px;
-}
-.wb_login span{
-    float:left;
-    margin-left:5px;
-    color:#000;
-    text-align: center;
-    font-size:14px;
+.qq_login span:last-child{
+  float: left;
+  margin-left: 5px;
+  color: #fff;
+  text-align: center;
+  font-size: 14px; }
+
+.wb_login {
+  display: block;
+  width: 300px;
+  height: 32px;
+  line-height: 24px;
+  background: #fff;
+  border-radius: 5px;
+  margin-bottom: 15px;
+  padding-top: 13px; }
+
+.wb_login span:first-child{
+  float: left;
+  width:23px;
+  height:19px;
+  background:url(../img/icons-s3764b6bca5.png) no-repeat;
+  background-position:0px -1722px;
+  margin-left: 78px; }
+
+.wb_login span:last-child{
+  float: left;
+  margin-left: 5px;
+  color: #000;
+  text-align: center;
+  font-size: 14px; }
+  
+.wb_login:hover{
+    background:#ddd;
 }

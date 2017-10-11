@@ -21,7 +21,7 @@ function removeEvent(dom,eventType,func){
 }
 //取消浏览器默认行为的函数封装
 
-function preventDefault(evt){
+function preventDefaultEvent(evt){
 	if(evt.preventDefault){
 		evt.preventDefault();
 	}else{

@@ -52,7 +52,7 @@
 				<div class="main_login">
 					<div class="login_word">登录</div>
 					<div class="login_user logins" >
-						<input type="text" placeholder="手机、邮箱或用户名"/>
+						<input type="text" placeholder="手机或用户名"/>
 					</div>
 					<div class="login_pass logins">
 						<input type="text" placeholder="密码"/>
@@ -62,7 +62,7 @@
 						<input type="text" placeholder="请按住滑块，拖动到最右边"/>
 					</div>
 					<div class="login_forget_pass"><a href="http://account.oneplus.cn/login/forget">忘记密码？</a></div>
-					<div class="login_trues"><span>确认</span></div>
+					<input type="button" class="login_trues" value="确认" />
 					<div class="login_reg"><span>没有一加账户？</span><a href="regist.html">立即注册</a></div>
 				</div>
 				<div class="other_login">
@@ -125,31 +125,54 @@
 <script type="text/javascript" src="js/jquery-1.8.3.min.js" ></script>
 <script type="text/javascript" src="js/public.js" ></script>
 <script type="text/javascript" src="js/eventTools.js" ></script>
+<script type="text/javascript" src="js/cookieTools.js" ></script>
+
 <script type="text/javascript">
-	window.onload = function(){
-	var isDown = false;
-	var offsetX;
-	var offsetY;
-	document.getElementsByClassName("tk").onmousedown = function(event){
-		var evt = event || window.event;
-		offsetX = evt.offsetX;
-		offsetY = evt.offsetY;
-		isDown = true;
-		preventDefault(evt);
-	}
+
+$(function(){  
 	
-	document.body.onmousemove = function(event){
-		if(isDown){
-			var evt = event || window.event;
-			document.getElementsByClassName("tk").style.left = evt.pageX-offsetX+"px";
-			document.getElementsByClassName("tk").style.top = evt.pageY-offsetY+"px";
-		}
-		preventDefault1705(evt);
-	}
-	
-	document.getElementsByClassName("tk").onmouseup = function(){
-		isDown = false;
-	}
-	
-}
+	var _move=false;//移动标记  
+	var _x,_y;//鼠标离控件左上角的相对位置  
+    $(".tk").click(function(){  
+         
+        }).mousedown(function(e){  
+	        _move=true;  
+	        _x=e.pageX-parseInt($(".tk").css("left"));  
+	        _y=e.pageY-parseInt($(".tk").css("top"));  
+	        $(".tk").fadeTo(20, 1);//点击后开始拖动并透明显示  
+	    });  
+    $(document).mousemove(function(e){  
+        if(_move){  
+            var x=e.pageX-_x;//移动时根据鼠标位置计算控件左上角的绝对位置  
+            var y=e.pageY-_y;  
+            $(".tk").css({top:y,left:x});//控件新位置  
+        }  
+   	 }).mouseup(function(){  
+    	_move=false;  
+    	$(".tk").fadeTo("fast", 1);//松开鼠标后停止移动并恢复成不透明  
+  	});  
+  	
+  	$(".login_trues").click(function(){
+		$.ajax({
+			type:"post",
+			url:"loginCheck.php",
+			async:true,
+			data:{
+				userName:$("#userName").val(),
+				userPass:$("#userPass").val()
+			},
+			success:function(data){
+				if(data==1){
+					//1、保存cookie
+					addCookie("userName",$("#userName").val(),7);
+					addCookie("userPass",$("#userPass").val(),7);
+					//2、跳转到首页
+					location.href="index.html"
+				}else{
+					alert("亲，用户名或者密码错误！");
+				}
+			}
+		});
+	});
+}); 
 </script>

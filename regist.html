@@ -50,39 +50,44 @@
 		<div class="middler">
 			<div class="regist">
 				<div class="main_regist">
-					<div class="regist_word">注册</div>
-					<div class="regist_user" >
-						<input type="text" placeholder="手机或邮箱"/>
+					<form method="post" action="registCheck.php">
+						<div class="regist_word">注册</div>
+					<div class="regist_progress regist_user" >
+						<input type="text" id="username" name="userName" placeholder="手机"/>
+						<div class="userName_tit">手机号有误</div>
 					</div>
-					<div class="regist_pass">
-						<input type="text" placeholder="密码6-16位，数字/字母/字符至少两种"/>
+					<div class="regist_progress regist_pass">
+						<input type="text" id="userpass" name="userPass" placeholder="密码6-16位，数字和字母两种"/>
+						<div class="userPass_tit">密码不符合要求</div>
 					</div>
-					<div class="true_pass">
-						<input type="text" placeholder="确认密码"/>
+					<div class="regist_progress true_pass">
+						<input type="text" id="truePass" placeholder="确认密码"/>
+						<div class="rePass_tit">两次密码不一致</div>
 					</div>
 					<div class="regist_check">
 						<div class="tk"> >> </div> 
-						<input type="text" placeholder="请按住拖块，拖到最右边"/>
+						<input type="text" placeholder="请按住滑块，拖动到最右边"/>
 					</div>
 					<div class="regist_tit">
 						<span>注册一加，即表示您同意一加的</span>
 						<a href="http://account.oneplus.cn/regist">用户协议</a>
 					</div>
-					<div class="regist_trues"><span>注册</span></div>
+					<input class="regist_trues" type="submit" value="注册"/>
 					<div class="login">
-						
 						<a href="login.html">登录</a>
 						<div class="circle"></div>
 					</div>
+					</form>
 				</div>
 				
 				<div class="other_login">
 					<div class="other_word">选择其他方式登录</div>
 					<a class="qq_login" href="http://account.oneplus.cn/qqlogin">
-						<img src="img/qq.png"/><span>QQ快捷登录</span>
-					</a>
+						<span></span>
+						<span>QQ快捷登录</span></a>
 					<a class="wb_login" href="http://account.oneplus.cn/wblogin">
-						<img src="img/weibo.png"/><span>微博快捷登录</span>
+						<span></span>
+						<span>微博快捷登录</span>
 					</a>
 				</div>
 			</div>
@@ -124,9 +129,17 @@
 		<div class="bottom">
 			<div class="bottoms">
 				<span class="sp">© 2013-2017 OnePlus. All Rights Reserved. (粤ICP备13088308号-1)</span>
-				<a class="cnnic" href="#"><img class="cn" src="img/cnnic.png"</a>
-				<a class="record" href="#"><img class="re"src="img/record.png"/><span class="rec">粤公网安备 44030402000178号 </span></a>
-				<a class="china" href="#"><span class="cha">Change location</span><img class="ch"src="img/china.png"/></a>
+				<a class="cnnic" href="#">
+					<img class="cn" src="img/cnnic.png"/>
+				</a>
+				<a class="record" href="#">
+					<img class="re"src="img/record.png"/>
+					<span class="rec">粤公网安备 44030402000178号 </span>
+				</a>
+				<a class="china" href="#">
+					<span class="cha">Change location</span>
+					<img class="ch"src="img/china.png"/>
+				</a>
 			</div>
 		</div>
 	</body>
@@ -134,3 +147,42 @@
 
 <script type="text/javascript" src="js/jquery-1.8.3.min.js" ></script>
 <script type="text/javascript" src="js/public.js" ></script>
+<script type="text/javascript">	
+	$("#username").blur(function(){
+		var userStr=$("#username")[0].value;
+		//11为数字，第一位为1，第二位为3,4,5,7,8，以数字结尾
+		var reg=/^1[34578][0-9]{9}$/;
+		//判断是否正确
+		if(!reg.test(userStr)){
+			$($(".userName_tit")[0]).css({opacity:"1"});
+		}
+//		else{
+//			//数字，字母，下划线，@，.@和.之间不能为空 ,不能以0开头,以.com,.cn,.com.cn结尾
+//			var reg=/^[a-z1-9_]+@\w+[\.com\.cn\com.cn]$/;
+//			//判断是否正确
+//			if(!reg.test(emailStr)){
+//				$($(".userName_tit")[0]).css({opacity:"1"});
+//				$($(".userName_tit")[0]).val("邮箱有误");
+//			}	
+	});
+	$("#userpass").blur(function(){
+		var userPassStr=$("#userpass")[0].value;	
+		//6-16位，数字和字母两种
+		var reg=/(^[0-9]+$)(^[A-z]+$)(^[^A-z0-9]+$)^.{6,16}$/;
+//		\x^21-7e字符
+		//判断是否正确
+		if(!reg.test(userPassStr)){
+			$($(".userPass_tit")[0]).css({opacity:"1"});
+		}
+	});
+	$("#truePass").blur(function(){
+		var userPassStr=$("#userpass")[0].value;	
+		var rePassStr=$("#truePass").val();
+		//判断是否一致
+		if(rePassStr!=userPassStr){
+			$($(".rePass_tit")[0]).css({opacity:"1"});
+		}
+	});	
+</script>
+
+
