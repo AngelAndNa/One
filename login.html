@@ -52,10 +52,10 @@
 				<div class="main_login">
 					<div class="login_word">登录</div>
 					<div class="login_user logins" >
-						<input type="text" placeholder="手机或用户名"/>
+						<input type="text" id="userName" placeholder="手机或用户名"/>
 					</div>
 					<div class="login_pass logins">
-						<input type="text" placeholder="密码"/>
+						<input type="password" id="userPass" placeholder="密码"/>
 					</div>
 					<div class="login_check">
 						<div class="tk"> >> </div> 
@@ -162,14 +162,15 @@ $(function(){
 				userPass:$("#userPass").val()
 			},
 			success:function(data){
-				if(data==1){
+				if(data=="1"){
 					//1、保存cookie
 					addCookie("userName",$("#userName").val(),7);
 					addCookie("userPass",$("#userPass").val(),7);
 					//2、跳转到首页
-					location.href="index.html"
+					location.href="index.html";
 				}else{
-					alert("亲，用户名或者密码错误！");
+					alert("用户名或者密码错误！");
+					
 				}
 			}
 		});

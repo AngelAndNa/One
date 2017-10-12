@@ -12,15 +12,25 @@
 			//选择数据库
 			mysql_select_db("mobileone",$con);
 			//执行sql语句
-			$sqlStr="insert into users(userName,userPass) values('".$userName."','".$userPass."')";
-			$result=mysql_query($sqlStr,$con);
+			$sqlStr1="select * from users where userName='".$userName."' and userPass='".$userPass."'";
+			$result1=mysql_query($sqlStr1,$con);
+
+			if(mysql_num_rows($result1)!=1){
+				$sqlStr2="insert into users(userName,userPass) values('".$userName."','".$userPass."')";
+				$result2=mysql_query($sqlStr2,$con);
+			}else{
+				echo ("0");
+			}
 			//关闭服务器
 			mysql_close($con);
-			echo($result);
 		}
-		if($result==1){
-			echo("注册成功，去登录吧！");
+		if($result2==1){
+			echo("1");
 		}else{
-			echo("注册失败……");
+			echo("0");
 		}
+			
+			
+		
+		
 ?>

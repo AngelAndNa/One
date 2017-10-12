@@ -77,18 +77,58 @@
 				</li>
 			</ul>	
 		</div>
-		<div class="design">
+		<div class="designs">
 			<div class="designs_top">
 				<div>设计，更加善解人意。</div>
 				<div>OnePlus 一直尝试将科技与材料结合，并以善解人意的设计，为你的出行提供便利与保护。 你的每一次背负，它都不辜负。</div>	
-				<div class="">
-					<p><span></span></p>
-					<p><span></span></p>
+				<div>
+					<p>
+						<img src="img/e3.png"/><span>莫兰迪灰</span>	
+					</p>
+					<p>
+						<img src="img/e4.jpg"/><span>太空黑</span>	
+					</p>
 				</div>
 			</div>
-			<div class="designs_bottom"></div>
-
+			<div class="designs_bottom">
+				<img src="img/6e.png" />
+			</div>
 		</div>
+		<div class="session1"></div>
+		<div class="session2">
+			<div class="session2_word">
+				<h1>出门背它，就够了。</h1>
+				<h4>不管你是忙中偷闲的旅行达人，还是忙里忙外的空中飞人。有它，就够了。</h4>
+			</div>
+		</div>
+		<div class="session3">
+			<div class="session3_word">
+				<div>
+					<span>60</span>
+					<span>%</span>
+					<span>看起来不大，却比上一代背包多装</span> 
+				</div>
+				<div>
+					<span>12</span>
+					<span>个</span>
+					<span>口袋，归类有序，减轻凌乱和记忆负担</span>
+				</div>
+				<div>
+					<span>1</span>
+					<span>个</span>
+					<span>贴心收纳袋，帮你隔离脏衣物</span>
+				</div>
+			</div>
+		</div>
+		<div class="session4">
+			<div class="session4_word">
+				<h1>面料和配色，一样出色。</h1>
+				<p>太空黑采用军用级耐磨面料 cordura ®，耐磨度是普通帆布的 10 倍。防泼水，使用更持久。神秘深邃，科技感十足。pan</p>
+				<p><span></span></p>
+			</div>
+		</div>
+		<div class="session5"></div>
+		<div class="session6"></div>
 		<div class="footer">
 			<div class="ints">
 				<div class="about">
@@ -138,7 +178,46 @@
 					<img class="ch"src="img/china.png"/>
 				</a>
 			</div>
-		</div>
-		
+		</div>	
 	</body>
 </html>
+<script type="text/javascript" src="js/jquery-1.8.3.min.js" ></script>
+<script type="text/javascript" src="js/SliderPlugInjQuery.js" ></script>
+<script type="text/javascript">
+	$(function(){
+		//轮播图
+		$(".session1").Slider({
+						"width" : 1423,
+						"height" :693,		
+						//图片数组
+						"imgs" : ["img/2w.png","img/3w.png","img/4w.png","img/5w.png"],
+						//时间间隔
+						"timeSpace" : 4000,
+						"btnObj" : {
+							"width":20,
+							"height":20,
+							"bgColor":"transparent",
+							"highBgColor":"transparent",
+							"isCircle": true
+						}
+			});
+		
+		//轮播图
+		$(".session2").Slider({
+						"width" : 1423,
+						"height" :693,		
+						//图片数组
+						"imgs" : ["img/img-8.jpg","img/img-9.jpg","img/img-10.jpg"],
+						//时间间隔
+						"timeSpace" : 3000,
+						"btnObj" : {
+							"width":30,
+							"height":5,
+							"bgColor":"#ccc",
+							"highBgColor":"red",
+							"isCircle": false
+						}
+			});
+	});
+
+</script>

@@ -53,11 +53,11 @@
 					<form method="post" action="registCheck.php">
 						<div class="regist_word">注册</div>
 					<div class="regist_progress regist_user" >
-						<input type="text" id="username" name="userName" placeholder="手机"/>
+						<input type="text" id="userName" name="userName" placeholder="手机"/>
 						<div class="userName_tit">手机号有误</div>
 					</div>
 					<div class="regist_progress regist_pass">
-						<input type="text" id="userpass" name="userPass" placeholder="密码6-16位，数字和字母两种"/>
+						<input type="text" id="userPass" name="userPass" placeholder="密码6-16位，数字和字母两种"/>
 						<div class="userPass_tit">密码不符合要求</div>
 					</div>
 					<div class="regist_progress true_pass">
@@ -147,9 +147,11 @@
 
 <script type="text/javascript" src="js/jquery-1.8.3.min.js" ></script>
 <script type="text/javascript" src="js/public.js" ></script>
+<script type="text/javascript" src="js/cookieTools.js" ></script>
 <script type="text/javascript">	
-	$("#username").blur(function(){
-		var userStr=$("#username")[0].value;
+$(function(){
+	$("#userName").blur(function(){
+		var userStr=$("#userName")[0].value;
 		//11为数字，第一位为1，第二位为3,4,5,7,8，以数字结尾
 		var reg=/^1[34578][0-9]{9}$/;
 		//判断是否正确
@@ -165,10 +167,11 @@
 //				$($(".userName_tit")[0]).val("邮箱有误");
 //			}	
 	});
-	$("#userpass").blur(function(){
-		var userPassStr=$("#userpass")[0].value;	
+	$("#userPass").blur(function(){
+		var userPassStr=$("#userPass")[0].value;	
 		//6-16位，数字和字母两种
-		var reg=/(^[0-9]+$)(^[A-z]+$)(^[^A-z0-9]+$)^.{6,16}$/;
+//		var reg=/(^[0-9]+$)(^[A-z]+$)(^[^A-z0-9]+$)^.{6,16}$/;
+		var reg=/^(?![0-9]+$)(?![a-zA-Z]+$)[0-9A-Za-z]{6,10}$/;
 //		\x^21-7e字符
 		//判断是否正确
 		if(!reg.test(userPassStr)){
@@ -176,13 +179,38 @@
 		}
 	});
 	$("#truePass").blur(function(){
-		var userPassStr=$("#userpass")[0].value;	
+		var userPassStr=$("#userPass")[0].value;	
 		var rePassStr=$("#truePass").val();
 		//判断是否一致
 		if(rePassStr!=userPassStr){
 			$($(".rePass_tit")[0]).css({opacity:"1"});
 		}
 	});	
+	
+	$(".regist_trues").click(function(){
+		$.ajax({
+			type:"post",
+			url:"registCheck.php",
+			async:true,
+			data:{
+				userName:$("#userName").val(),
+				userPass:$("#userPass").val()
+			},
+			success:function(data){
+				if(data=="1"){
+					//1、保存cookie
+//					addCookie("userName",$("#userName").val(),7);
+//					addCookie("userPass",$("#userPass").val(),7);
+					//2、跳转到登录页面
+					location.href="login.html";
+				}else{
+					alert("用户名已存在");
+					
+				}
+			}
+		});
+	});
+});	
 </script>
 
 
