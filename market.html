@@ -90,90 +90,89 @@
 		
 		<div class="box">
 			<div class="inner_box">
-				<a href="http://store.oneplus.cn/products/B0000058">
-					<img src="img/ChargerBundle0919-large.jpg"/>
-				</a>
-				<a href="http://store.oneplus.cn/product/oneplus-5-lld-bundle">
-					<img src="img/Bundle0919-large.jpg"/>
-				</a>
-				<a href="http://store.oneplus.cn/product/oneplus-travel-backpack">
-					<img src="img/Backpack0919-large.jpg"/>
-				</a>
+				<!--<a href="http://store.oneplus.cn/product/oneplus-5-lld-bundle">-->
+				<!--<img src="img/ChargerBundle0919-large.jpg"/>-->
+				<!--</a>-->
+				<!--<a href="http://store.oneplus.cn/product/oneplus-5-lld-bundle">-->
+					<!--<img src="img/Bundle0919-large.jpg"/>-->
+				<!--</a>-->
+				<!--<a href="productDetail.html">-->
+					<!--<img src="img/Backpack0919-large.jpg"/>-->
+				<!--</a>-->
 			</div>
-			
 		</div>
 		<div class="box1">
 			<div class="box1_main">
 				<h2>OnePlus 5热销配件</h2>
-				<a href="">
-					<img src="img/803e.png"/>
-					<h3>OnePlus 5 3D钢化玻璃保护膜</h3>
-					<span>￥99.00</span>
-				</a>
-				<a href="">
-					<img src="img/804e.png"/>
-					<h3>一加银耳2</h3>
-					<span>￥119.00</span>
-				</a>
-				<a href="">
-					<img src="img/805e.png"/>
-					<h3>一加车载DASH闪充</h3>
-					<span>￥199.00</span>
-				</a>
-				<a href="">
-					<img src="img/806e.png"/>
-					<h3>产品-OnePlus 5 芳纶纤维全包保护壳</h3>
-					<span>￥199.00</span>
-				</a>
+				<!--<a href="">-->
+					<!--<img src="img/803e.png"/>-->
+					<!--<h3>OnePlus 5 3D钢化玻璃保护膜</h3>-->
+					<!--<span>￥99.00</span>-->
+				<!--</a>-->
+				<!--<a href="">-->
+					<!--<img src="img/804e.png"/>-->
+					<!--<h3>一加银耳2</h3>-->
+					<!--<span>￥119.00</span>-->
+				<!--</a>-->
+				<!--<a href="">-->
+					<!--<img src="img/805e.png"/>-->
+					<!--<h3>一加车载DASH闪充</h3>-->
+					<!--<span>￥199.00</span>-->
+				<!--</a>-->
+				<!--<a href="">-->
+					<!--<img src="img/806e.png"/>-->
+					<!--<h3>产品-OnePlus 5 芳纶纤维全包保护壳</h3>-->
+					<!--<span>￥199.00</span>-->
+				<!--</a>-->
 			</div>
 		
 			<div class="box1_main">
 				<h2>一加生活周边</h2>
-				<a href="productDetail.html">
-					<img src="img/703e.png"/>
-					<h3>一加旅行双肩包</h3>
-					<span>￥399.00</span>
-				</a>
-				<a href="">
-					<img src="img/704e.png"/>
-					<h3>学习套装</h3>
-					<span>￥169.00</span>
-				</a>
-				<a href="">
-					<img src="img/706e.png"/>
-					<h3>一加真皮钱包</h3>
-					<span>￥249.00</span>
-				</a>
-				<a href="">
-					<img src="img/705e.png"/>
-					<h3>一加旅行袋</h3>
-					<span>￥299.00</span>
-				</a>
+				<!--<a href="productDetail.html">-->
+					<!--<img src="img/703e.png"/>-->
+					<!--<h3>一加旅行双肩包</h3>-->
+					<!--<span>￥399.00</span>-->
+				<!--</a>-->
+				<!--<a href="">-->
+					<!--<img src="img/704e.png"/>-->
+					<!--<h3>学习套装</h3>-->
+					<!--<span>￥169.00</span>-->
+				<!--</a>-->
+				<!--<a href="">-->
+					<!--<img src="img/706e.png"/>-->
+					<!--<h3>一加真皮钱包</h3>-->
+					<!--<span>￥249.00</span>-->
+				<!--</a>-->
+				<!--<a href="">-->
+					<!--<img src="img/705e.png"/>-->
+					<!--<h3>一加旅行袋</h3>-->
+					<!--<span>￥299.00</span>-->
+				<!--</a>-->
 			</div>
 		</div>
 		
 		<div class="designs">
 			<ul class="items">
 				<li class="lis first">
-					<a href="http://service.oneplus.cn">
+					<a href="service.html">
 						<p class="return-one"></p>
 						<span>7天无理由退货</span>
 					</a>
 				</li>
 				<li class="lis two">
-					<a href="http://service.oneplus.cn">
+					<a href="service.html">
 						<p class="return-two"></p>
 						<span>15天退货保障</span>
 					</a>
 				</li>
 				<li class="lis three">
-					<a href="http://service.oneplus.cn">
+					<a href="service.html">
 						<p class="swap"></p>
 						<span>30天换货保障</span>
 					</a>
 				</li>
 				<li class="lis four">
-					<a href="http://service.oneplus.cn">
+					<a href="service.html">
 						<p class="free-send"></p>
 						<span>99元全场包邮</span>
 					</a>
@@ -236,5 +235,41 @@
 <script type="text/javascript" src="js/jquery-1.8.3.min.js" ></script>		
 <script type="text/javascript" src="js/public.js" ></script>
 <script type="text/javascript">
-	
+	var str1="";
+	$.ajax({
+		url:'php/getGoodsList.php',
+		type:'get',
+		data:{
+
+		},
+		success:function (data) {
+			var datas=eval(data);
+			for(var i=0;i<datas.length;i++){
+                str1+='<a href="productDetail.html">'+
+                    '<img src="'+datas[i].beiyong1+'"/>'+
+                    '</a>'
+			}
+			$(".inner_box").html(str1);
+        }
+	})
+
+    var str2="";
+    $.ajax({
+        url:'php/getGoodsList1.php',
+        type:'get',
+        data:{
+
+        },
+        success:function (data) {
+            var data=eval(data);
+            for(var i=0;i<data.length;i++){
+                str2+='<a href="">'+
+                    '<img src="'+data[i].beiyong1+'"/>'+
+                    '<h3>'+data[i].goodsName+'</h3>'+
+                	'<span>'+'￥'+data[i].goodsPrice+'</span>'+
+                '</a>'
+            }
+            $(".box1_main").html(str2);
+        }
+    })
 </script>
